@@ -1,28 +1,28 @@
 # AngularJS dropdownlist populated with numbers
 
 ```javascript
-var relasianshipApp = angular.module('relasianship', []);
+var relasianshipApp = angular.module('relasianshipApp', []);
 relasianshipApp.directive('dropdownNumbered', function () {
   return {
     restrict: 'A',
     scope: {
-      ngModel: "="
+        ngModel: "="
     },
-    link: function(scope, element, attrs) {
-      scope.age = [];
-      scope.dropdownId    = attrs.dropdownId;
-      scope.dropdownName  = attrs.dropdownName;
-      scope.dropdownClass = attrs.dropdownClass;
-      scope.dropdownPromptMessage = attrs.dropdownPromptMessage;
+    link: function (scope, element, attrs) {
+        scope.numbers = [];
+        scope.dropdownId = attrs.dropdownId;
+        scope.dropdownName = attrs.dropdownName;
+        scope.dropdownClass = attrs.dropdownClass;
+        scope.dropdownPromptMessage = attrs.dropdownPromptMessage;
 
-      var valueFrom = parseInt(attrs.dropdownValueFrom);
-      var valueTo   = parseInt(attrs.dropdownValueTo);
+        var valueFrom = parseInt(attrs.dropdownValueFrom);
+        var valueTo   = parseInt(attrs.dropdownValueTo);
 
-      for(var i = valueFrom; i <= valueTo; i++) {
-        scope.age.push(i);
-      }
+        for (var i = valueFrom; i <= valueTo; i++) {
+            scope.numbers.push(i);
+        }
     },
-    template: "<select id='{{dropdownId}}' name='{{dropdownName}}' ng-options='y for y in age' class='{{dropdownClass}}'><option value=''>{{dropdownPromptMessage}}</option></select>",
+    template: "<select id='{{dropdownId}}' name='{{dropdownName}}' ng-options='y for y in numbers' class='{{dropdownClass}}'><option value=''>{{dropdownPromptMessage}}</option></select>",
     replace: true
   };
 });
