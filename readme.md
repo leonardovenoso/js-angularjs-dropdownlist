@@ -5,6 +5,9 @@ This's the efficient way to create a dropdownlist in AngularJs without using the
 
 What I created in this piece of code is a directive to create a dropdown list with numbers where the ng-model name can be set dynamically as well as the attributes: id, name, prompt, class, number from and number to.
 
+### Why a directive?
+To keep DRY your code
+
 ### Context to use
 It can be used for example to populate a dropdown with the allowed ages. For example ages from 18-100 years old.
 
