@@ -40,7 +40,7 @@ relasianshipApp.directive('dropdownNumbered', function () {
             scope.numbers.push(i);
         }
     },
-    template: "<select id='{{dropdownId}}' name='{{dropdownName}}' ng-options='y for y in numbers' class='{{dropdownClass}}'><option value=''>{{dropdownPromptMessage}}</option></select>",
+    template: "<select id='{{dropdownId}}' name='{{dropdownName}}' ng-options='y for y in numbers track by y' class='{{dropdownClass}}'><option value=''>{{dropdownPromptMessage}}</option></select>",
     replace: true
   };
 });
