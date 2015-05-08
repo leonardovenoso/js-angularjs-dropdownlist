@@ -14,6 +14,10 @@ It can be used for example to populate a dropdown with the allowed ages. For exa
 ### How to use it
 Include this piece of code in your directive file and copy and paste the second div.
 
+### LICENSE
+License: 2015 - released to the Public Domain.
+
+
 If you find any other way to improve it contact me at: leonardo.venoso@live.com
 
 [JSFiddle](http://jsfiddle.net/leonardo_venoso/ujur46og/5/) 
