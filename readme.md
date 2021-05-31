@@ -28,7 +28,7 @@ License: 2015 - released to the Public Domain.
 
 
 ```javascript
-var relasianshipApp = angular.module('relasianshipApp', []);
+var relasianshipApp = angular.module('myAppName', []);
 relasianshipApp.directive('dropdownNumbered', function () {
   return {
     restrict: 'A',
