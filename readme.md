@@ -14,7 +14,7 @@ It can be used to populate a dropdown list with a range of years. For example ye
 
 ### How to use it
 Include this piece of code in your directive file and copy and paste the second div:
-<div dropdown-numbered=''> .... </div>.
+<div dropdown-numbered=''> </div>.
 
 ### LICENSE
 License: 2015 - released to the Public Domain.
