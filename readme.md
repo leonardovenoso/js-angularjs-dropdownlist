@@ -1,26 +1,23 @@
 # AngularJS dropdownlist populated with numbers
 
 ### What is dropdownNumbered directive?
-This's the efficient way to create a dropdownlist in AngularJs without using the directive ** ngRepeat since it consumes a lot of memory and it's not recommended by the AngularJS community.
+This is the efficient way to create a dropdownlist in AngularJs without the **ngRepeat** directive. The mentioned directive consumes a lot of memory and it is not recommended by the AngularJS community.
 
-What I created in this piece of code is a directive to create a dropdown list with numbers where the ng-model name can be set dynamically as well as the attributes: id, name, prompt, class, number from and number to.
+This piece of code contains a directive to create a dropdown list with numbers in which the ng-model name can be set dynamically.
+The following attributes can also be set dinamically: id, name, prompt, class, number from and number to.
 
 ### Why a directive?
 To keep DRY your code
 
 ### Context to use
-It can be used for example to populate a dropdown with the allowed ages. For example ages from 18-100 years old.
+It can be used to populate a dropdown list with a range of years. For example years from 1900 to 2021.
 
 ### How to use it
-Include this piece of code in your directive file and copy and paste the second div.
+Include this piece of code in your directive file and copy and paste the second div:
+<div dropdown-numbered=''> .... </div>.
 
 ### LICENSE
 License: 2015 - released to the Public Domain.
-
-
-If you find any other way to improve it contact me at: leonardo.venoso@live.com
-
-
 
 
 [JSFiddle](http://jsfiddle.net/leonardo_venoso/ujur46og/5/) 
